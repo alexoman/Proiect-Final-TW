@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+ <meta name="Club" content="A_doua_pagina">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"> 
+ <title>FC Barcelona</title>
+ <link rel="stylesheet" type="text/css" href="CSS/style1.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="CSS/dark2.css">
+ <script type="text/javascript" src="js/func.js"></script>
+ <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+ <script src="js/trad.js"></script>
+ <script src="js/n2t3.js"></script>
+ <script src="js/n2t4.js"></script>
+</head>
+<body class="Pagina2">
+    <div class="header">
+        <h1 id="#Stadion">
+            <a href="Home.html" id="nume_pag">Barcelona</a>
+        </h1>
+        <a href="Home.html"><img src="imagini/logo.png" alt="Logo"></a>
+    </div>
+    <div class="navigation_bar" id="navigation_bar">
+        <a href="Home.html" class="activ"><i class="fa fa-home"></i>Acasa</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Club <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Club.html">Stadion</a>
+                <a href="Club.html#Rivalitate">Rivalitate</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Prima Echipa<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Primul11.html">Clasament</a>
+                <a href="Primul11.html#Jucatorii">Squad</a>
+                <a href="Primul11.html#Galerie">Barca Photography</a>
+                <a href="Primul11.html#Cules">Les Cules</a>
+            </div>
+        </div>
+        <a href="ForFans.html">KnowUrTeam</a>
+        <a href="javascript:void(0);" style="font-size:19px;" class="icon" onclick="ApasareButon()">&#9776;</a>
+    </div>
+    <h2 id="dark">Dark Mode</h2>
+    <br>
+    <div class="checkbox">
+        <input type="checkbox" onclick="Alerta()" id="darkCheck" class="darkCheck">
+        <label for="darkCheck"></label>
+    <script src="js/dark.js"></script>
+    </div>
+    <br><br><br><br><br>
+    <div class="numaratoare">
+        <table class="countdownContainer">
+            <tr class="info">
+                <td colspan="4">Timp ramas pana la urmatorul meci</td>
+            </tr>
+            <tr class="info">
+                <td id="zile">10</td>
+                <td id="ore">10</td>
+                <td id="minute">10</td>
+                <td id="secunde">10</td>
+            </tr>
+            <tr>
+                <td>Zile</td>
+                <td>Ore</td>
+                <td>Minute</td>
+                <td>Secunde</td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/n1t5.js"></script>
+    <article class="Stadion" id="Stadionn">
+        <h2 id="Stad">Stadion</h2>
+        <script>
+            document.getElementById("Stad").onmouseover=function() {mouseOver()};
+            document.getElementById("Stad").onmouseout=function() {mouseOut()};
+        </script>
+        <br>
+        <div id="container">
+            <button onclick="openWin()" id="1stwin">Informatii aditionale</button>
+            <button onclicl="closeWin()" id="2ndwin">Inchide fereastra</button>
+        </div>
+
+        <br><br>
+        <p>
+            <b>Camp Nou</b> este stadionul Barcelonei din anul 1957,<img src="imagini/cnou.jpg" alt="Stadion"> acesta fiind la ora actuala cel mai mare stadion din Europa, cu peste <b>99 000</b> de locuri. Stadionul a fost modernizat in urma anului 2018, dupa ce s-au investit peste 100 de milioane de euro pentru a reface sectorul <b>NORD</b>
+            al fanilor catalani. "Camp Nou" provine din limba catalana si semnifica "teren nou".
+        </p>
+    </article>
+    <aside>
+        <h2>
+            Acesta este unul din cele mai vizitate stadioane din lume, venind turisti chiar si din cealalta parte a lumii, de exemplu, din China.
+        </h2>
+    </aside>
+    <article id="Rivalitate">
+        <br>
+        <br>
+        <h2>Marele El Clasico</h2>
+        <br>
+        <p><b>"El Clasico"</b> reprezinta cel mai mare derby de Europa intre cele mai mari forte spaniole,<img src="imagini/elclasico.jpg" alt="Rivalry"> cat si europene care au existat vreodata.Faptul ca locatarii provin din doua regiuni istorice ale Spaniei, proiecteaza o inversunare mai mare intre fani(Castilia si Catalunya), cea din urma, recent, incercand sa obtina independenta fata de Spania. </p>
+        <br><br>
+        <h2>Rivalitatea cu Espanyol</h2>
+        <br>
+        <p>Espanyol Barcelona este celalalt club care concureaza in LaLiga,<img src="imagini/espanyol.jpeg" alt="Catalunya"> fiind un club mult mai mic decat Barcelona. Insa, faptul ca rivalitatea intre fani este imensa, meciurile intre aceste cluburi sunt facute din ce in ce mai frumoase si mai competitive, jucatorilor de la Espanyol oferindu-se un boost motivational.</p>
+    </article>
+    <br>
+    <br>
+    <div class="footer">
+        <div id="google_translate_element"> </div>
+        <h2>Roman Alexandru-George</h2>
+        <br>
+        <h2 id="Ora"></h2>
+        <div class="timpPetrecut">
+            <p>Cat ai stat pe Pagina</p>
+            <p id="timeSpent"></p>
+        </div>
+    </div>
+
+</body>
+<script>
+    Trans();
+    Spatiere();
+    setCol();
+</script>
+</html>
