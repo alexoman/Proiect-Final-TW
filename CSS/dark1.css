@@ -1,0 +1,92 @@
+.dark-theme .header
+{
+	background-color:black;
+}
+.dark-theme .navigation_bar
+{
+	background-color:white;
+}
+.dark-theme .navigation_bar a
+{
+	color:black;
+}
+.dark-theme .activ
+{
+	background-color:#b8b894;
+}
+.dark-theme .dropdown .dropbtn
+{
+	color:black;
+}
+.dark-theme .dropdown-content
+{
+	background-color:black;
+}
+.dark-theme .dropdown-content a
+{
+	color:white;
+}
+.dark-theme .navigation_bar a:hover 
+{
+	background-color: #009933;
+}
+.dark-theme .dropdown:hover .dropbtn
+{
+	background-color: #009933;
+}
+.dark-theme .dropdown-content a:hover {
+  background-color: #001a09;
+  
+}
+.dark-theme .parte
+{
+	background-color:#1f1f14;
+}
+.dark-theme #Legende
+{
+	color:#990000;
+}
+.dark-theme #titrat 
+{
+	color:#990000;
+}
+.dark-theme #trofee
+{
+	color:white;
+}
+.dark-theme p
+{
+	color:white;
+}
+.dark-theme #Leg li
+{
+	color:white;
+}
+.dark-theme #stire
+{
+	color:white;
+}
+.dark-theme .stire
+{
+	color:white;
+}
+.dark-theme .descriere_poza
+{
+	color:white;
+}
+.dark-theme #lista li
+{
+	color:white;
+}
+.dark-theme .footer
+{
+	background-image: linear-gradient(to  right, #111109, black);
+}
+.dark-theme .footer h2
+{
+	color:white;
+}
+.dark-theme .principal
+{
+	background-color:black;
+}

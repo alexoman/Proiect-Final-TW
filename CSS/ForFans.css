@@ -1,0 +1,104 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
+  body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(var(--hue), 100%, 20%);
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  .HOME
+  {
+      text-align:center;
+      position:relative;
+      top:35%;
+  }
+  .HOME a
+  {
+      font-size:50px;
+      text-align:center;
+      color:white;
+      text-decoration:none;
+  }
+  
+  .container {
+    position:relative;
+    width: 1000px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+  }
+  
+  .buton-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .buton {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    font-size:20px;
+  }
+  
+  .buton:hover {
+    border-color: black;
+  }
+  
+  .buton.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .buton.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-buton, .urmator-buton {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .butoane-control {
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ascunde {
+    display: none;
+  }
+  #intrebare
+  {
+      font-size:25px;
+  }

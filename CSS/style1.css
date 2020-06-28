@@ -1,0 +1,893 @@
+/* Pentru tot textul */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+/* Header-ul */
+.header {
+  padding: 15px;
+  background-color:#EDBB00;
+  color: #EDBB00;
+  text-align:center;
+}
+.header h1
+{
+	font-size:50px;
+	line-height:2em;
+	vertical-align:20px;
+	text-align:center;
+}
+.header h1 a
+{
+		text-decoration:none;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px gray;
+		color:DodgerBlue;
+}
+.header img
+{
+	width:5vw;
+	height:auto;
+	padding:0px,20px;
+	text-decoration:none;
+}
+.header h1,img
+{
+	display:inline-block;
+}
+/*  nav bar ul*/
+.navigation_bar {
+  overflow: hidden;
+  background-color: #A50044;
+}
+
+.navigation_bar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  text-align:center;
+}
+
+.activ {
+  background-color: #660000;
+  color: white;
+}
+
+.navigation_bar .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 23px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navigation_bar a:hover, .dropdown:hover .dropbtn {
+  background-color: #c5aa6a;
+  color: white;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation_bar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .navigation_bar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation_bar.responsive {position: relative;}
+  .navigation_bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation_bar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navigation_bar.responsive .dropdown {float: none;}
+  .navigation_bar.responsive .dropdown-content {position: relative;}
+  .navigation_bar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/* Pagina1 */
+/* Partea din stanga cu Cel mai titrat club din lume si jucatorii */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.parte {
+  flex: 30%;
+  background-color: hsl(47, 78%, 73%);
+  padding: 20px;
+}
+.parte  h4,h2
+{
+	text-align:center;
+	color:black;
+}
+.parte h2
+{
+	font-size:30px;
+	color:#ff8080;
+}
+.parte p
+{
+	font-size:20px;
+}
+.parte ul li
+{
+	text-align:center;
+	font-size:24px;
+	list-style:none;
+	font-weight: bold;
+	color:rgb(26, 140, 255);
+}
+/* Stilizarea pozelor din partea stanga */
+.pozaMessi {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+.pozaIniesta {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+.pozaXavi {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+.pozaRon {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+.pozaPuyol {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+.pozaGuardiola {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+.poza11 {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+/* Continutul paginii */
+.principal {
+  flex: 70%;
+  background-color: #009AD7;
+  padding: 20px;
+  color:black;
+}
+.principal h2
+{
+	font-size:35px;
+	text-align:center;
+	color:black;
+}
+.descriere_poza {
+    text-align: center;
+    line-height: normal;
+	font-size:13px;
+    margin-bottom: 2%;
+	color:black;
+}
+.principal p
+{
+	font-size:20px;
+	font-family:Verdana;
+}
+.principal ol li
+{
+	font-size:20px;
+	font-family:Italic;
+	padding:4px;
+	margin-left:4%;
+
+}
+.clasa_buton{
+    margin: auto;
+    height:44px;
+    width:200px;
+	padding:10px;
+}
+#stire,#stire1,#stire2,#stire3,#stire4
+{
+	color:black;
+}
+#buton1{
+    cursor: pointer;
+    border:none;
+    padding:4px;
+    font-size:15px;
+    background:linear-gradient(141deg, #1b4188 0%, #204da0 51%, #255abb 75%);
+    color:white;
+    box-sizing:border-box;
+}
+#mai_mult1,#mai_mult2
+{
+	display:none;
+}
+.Messigol {
+  width: 100%;
+  padding: 20px;
+  background-size:cover;
+  margin:auto;
+  transition-property: width;
+  height:auto;
+}
+.pozaMeci {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+.pjanicharthur {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+.bartomeu {
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+  margin:auto;
+  height:auto;
+}
+/* Pagina2 */
+.Pagina2
+{
+	background-color:#4715bb;
+}
+.Stadionimg
+{
+	float:left;
+	width:50vw;
+	height:50vh;
+	padding:10px;
+}
+.Stadion img:hover {
+  transform: scaleX(-1);
+}
+#dark 
+{
+	color:black;
+	font-size:40px;
+	margin-top:5%;
+}
+.Stadion h2
+{
+	margin-top:5%;
+	color:white;
+	font-size:50px;
+	text-align:center;
+}
+#1stwin,#2ndwin{
+    width: 300px;
+    height: 40px;
+	background-color: #f4511e;
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.8;
+	transition: 0.3s;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+#1stwin:hover {opacity: 1}
+#2ndwin:hover {opacity: 1}
+#container{
+    text-align: center;
+}
+.Stadion p
+{
+	font-size:23px;
+	padding:40px;
+	font-family:Verdana;
+}
+#Rivalitate h2
+{
+	color:White;
+	text-align:center;
+	font-size:50px;
+}
+#Rivalitate p
+{
+	margin:auto;
+	padding:40px;
+	font-size:23px;
+	font-family:Tahoma;
+}
+#Rivalitate #clasico
+{
+	float:right;
+	width:40vw;
+	height:40vh;
+	margin:auto;
+	padding:10px;
+}
+#Rivalitate #barcelona
+{
+	float:left;
+	width:40vw;
+	height:40vh;
+	margin:auto;
+	padding:10px;
+}
+
+@media screen and (max-width: 600px) {
+  .Stadium h1,#Rivalitate h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Stadium p,#Rivalitate p {
+    font-size: 15px;
+  }
+}
+/* Pagina3 */
+.Pagina3 
+{
+	background-color: #EDBB00;
+	margin:0;
+}
+/* Clasament */
+#Clasament{
+	text-align:center;
+	margin-bottom:5%;
+	margin-top:5%;
+	font-size:40px;
+	color:Black;
+	font-weight:bold;
+	text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px white;
+}
+.Facebook
+{
+	text-align:center;
+}
+.Facebook p
+{
+	text-align:center;
+	font-size:30px;
+}
+#Facebook{
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+	text-decoration:none;
+    font-family: verdana;
+    font-size: 50px;
+	text-align:center;
+    color: rgb(165, 219, 16);
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+.prevent
+{
+	text-align:center;
+}
+.Checkbox {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}
+.Checkbox > span {
+    color: black;
+	font-size:25px;
+    padding: 0.5rem 0.25rem;
+}
+
+.Checkbox > input {
+    height: 50px;
+    width: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #34495E;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.3s;
+    background-color: red;
+    cursor: pointer;
+  }
+  
+.Checkbox > input:checked {
+    border: 1px solid #41B883;
+    background-color: green;
+}
+
+.tabel table{
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+  width:75vw;
+}
+@media screen and (max-width: 600px) {
+  .tabel table{
+    margin-left:auto;
+	margin-right:auto;
+	width:20vw;
+	height:auto;
+	border-collapse: collapse;
+  }
+}
+.tabel table th
+{
+	animation-name:galben;
+	animation-duration: 1s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+@keyframes galben {
+    from {background-color: rgb(21, 241, 205);}
+    to {background-color: rgb(231, 175, 175);}
+}
+.tabel th
+{
+	color:black;
+	padding:8px;
+	text-align:center;
+	font-size:25px;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+@media screen and (max-width: 600px) {
+  .tabel table th{
+    padding:2px;
+	text-align:center;
+	font-size:15px;
+  }
+}
+.tabel table td{
+	text-align: center;
+	padding: 8px;
+	color:#190aa7;
+	font-size:20px;
+	font-weight: bold;
+	font-family: Helvetica;
+	border-bottom:1px solid;
+	border-right:1px solid;
+	border-color:white;
+}
+@media screen and (max-width: 600px) {
+  .tabel table td{
+    padding:px;
+	text-align:center;
+	font-size:15px;
+	font-family: Helvetica;
+	border-bottom:1px solid;
+	border-right:1px solid;
+	border-color:white;
+  }
+}
+.tabel table tr:nth-child(even){
+	background-color: #01080f;
+}
+.tabel table tr:nth-child(odd){
+	background-color: #869feb;
+}
+
+/* Squad */
+.Jucatori h2
+{
+	text-align:center;
+	font-size:40px;
+	color: Blue;
+}
+/* Flex cu figcaption*/
+.photos {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photos img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+.descriere {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .descriere {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+.Photos h2
+{
+	text-align:center;
+	color:Blue;
+	font-size:40px;
+}
+.rand {
+  display: -ms-flexbox; 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content:center;
+}
+.coloana {
+  
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.coloana img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height:25vh;
+}
+/* Galerie de imagini de tip grid*/
+#Galeriee
+{
+	text-align:center;
+	color:Blue;
+	font-size:40px;
+}
+#Fani
+{
+	text-align:center;
+	color:Blue;
+	font-size:40px;
+}
+.Noua_Galerie {
+  text-align: center;
+  padding: 32px;
+}
+.continut
+{
+	position:relative;
+}
+.continut img
+{
+	vertical-align:middle;
+	width:100%;
+	height:80px;
+}
+.slide {
+  display: none;
+}
+.slide img
+{
+	width:100%;
+	height:75vh;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.nrtext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Buton dark mode */
+.checkbox > input[type=checkbox] {
+  visibility: hidden;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 26px;
+  margin: 0 auto;
+  background: #FFF;
+  border: 1px solid #2E2E2E;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  z-index=-1;
+}
+
+.checkbox:after {
+  position: absolute;
+  display: inline;
+  right: 10px;
+  content: 'no';
+  color: #E53935;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  z-index: 0;
+}
+
+.checkbox:before {
+  position: absolute;
+  display: inline;
+  left: 10px;
+  content: 'yes';
+  color: #43A047;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  z-index: 0;
+}
+
+.checkbox label {
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: 3px;
+  width: 34px;
+  height: 20px;
+  background: #2E2E2E;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  z-index: 1;
+}
+
+.checkbox input[type=checkbox]:checked + label {
+  left: 43px;
+}
+
+/*Footer*/
+
+.footer {
+  padding: 25px;
+  
+  background-image: linear-gradient(to  right, #a10b0b, rgb(52, 13, 141));
+  width: 100%;
+  color:white;
+  bottom: 0;
+  float:left;
+}
+.footer h2
+{
+	color:white;
+}
+.footer #google_translate_element
+{
+	text-align:right;
+}
+.footer #Ora
+{
+	font-size:15px;
+}
+.timpPetrecut
+{
+  text-align: center;
+  font-size:20px;  
+}
+
+#canvas1
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(#25364F,#4d71a5,#9bc4ff);
+}
+
+.Revino
+{
+  background:linear-gradient(#25364F,#4d71a5,#9bc4ff);
+  font-size:50px;
+  text-align: center;
+  color:white;
+}
+
+.Revino a
+{
+  text-decoration: none;
+  color:white;
+}
+
+.countdownContainer
+{
+  margin-left:15%;
+  margin-right:15%;
+  width:70%;
+  text-align:center;
+  background-color : #ddd;
+        border:1px solid #999;
+        padding: 10px;
+        box-shadow:0 0 5px 3px #ccc;
+}
+
+.AfisAsc
+{
+  text-align: center;
+}
+
+.mesaje
+{
+  text-align: center;
+  color:red;
+}
+
+.mesaje p
+{
+  font-size:35px;
+}
+
+#ravase
+{
+  color:blue;
+}
